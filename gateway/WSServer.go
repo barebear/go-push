@@ -34,6 +34,8 @@ func handleConnect(resp http.ResponseWriter, req *http.Request) {
 		wsConn *WSConnection
 	)
 
+	//todo 此处校验用户登陆验证，根据token从redis中获取用户数据，与uid做比较
+
 	// WebSocket握手
 	if wsSocket, err = wsUpgrader.Upgrade(resp, req, nil); err != nil {
 		return

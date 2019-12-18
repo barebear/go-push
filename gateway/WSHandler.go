@@ -36,7 +36,7 @@ func (wsConnection *WSConnection) handlePing(bizReq *common.BizMessage) (bizResp
 	var (
 		buf []byte
 	)
-
+	//todo 此处校验用户登陆验证，验证有效性后，更新 wsConnection 中的token
 	wsConnection.KeepAlive()
 
 	if buf, err = json.Marshal(common.BizPongData{}); err != nil {

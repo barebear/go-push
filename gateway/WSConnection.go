@@ -10,6 +10,8 @@ import (
 type WSConnection struct {
 	mutex sync.Mutex
 	connId uint64
+	uid    string   //用户uid，默认为0-未登陆
+	token  string   //用户认证token，默认是sessionid，可从reids中获取userinfo
 	wsSocket *websocket.Conn
 	inChan chan*common.WSMessage
 	outChan chan*common.WSMessage

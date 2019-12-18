@@ -1,12 +1,12 @@
 package logic
 
 import (
-	"net/http"
 	"crypto/tls"
-	"time"
+	"golang.org/x/net/http2"
+	"net/http"
 	"net/url"
 	"strconv"
-	"golang.org/x/net/http2"
+	"time"
 )
 
 // 与网关之间的通讯

@@ -6,7 +6,7 @@ import (
 	"flag"
 	"runtime"
 	"time"
-	"github.com/owenliang/go-push/logic"
+	"github.com/barebear/go-push/logic"
 )
 
 var (

@@ -2,7 +2,7 @@ package logic
 
 import (
 	"encoding/json"
-	"github.com/owenliang/go-push/common"
+	"github.com/barebear/go-push/common"
 )
 
 type PushJob struct {

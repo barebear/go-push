@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"encoding/json"
 	"crypto/tls"
-	"github.com/owenliang/go-push/common"
+	"github.com/barebear/go-push/common"
 )
 
 type Service struct {
